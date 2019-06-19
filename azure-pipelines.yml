@@ -19,7 +19,4 @@ steps:
 
 - task: PublishBuildArtifacts@1
 
-- task: ArchiveFiles@2
-  inputs:
-    rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
-    includeRootFolder: false
+
