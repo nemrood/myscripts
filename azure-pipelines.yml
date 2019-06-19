@@ -10,6 +10,9 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+
+- script: git clone https://github.com/nemrood/myscripts.git
+
 - task: CopyFiles@2
   inputs:
     SourceFolder: '$(System.DefaultWorkingDirectory)'
