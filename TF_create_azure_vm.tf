@@ -1,8 +1,8 @@
 provider "azurerm" {
     subscription_id = "e50303cd-d673-48d6-96c2-5b93fd069c7c"
-    client_id       = "e4e8968d-dc29-4244-b08e-3b5851aff255"
+    client_id       = "24e0aa4c-a381-4b7a-bdfa-aa8809f77a5b"
     client_secret   = "MC5MVDFJ+@qlwky19L-x/xMVLZpVfti8"
-    tenant_id       = "235d52d4-3e51-40fb-b2b0-4c6de0b8b62a"
+    tenant_id       = "e4e8968d-dc29-4244-b08e-3b5851aff255"
 }
 
 
