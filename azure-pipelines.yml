@@ -9,9 +9,21 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
-steps:
 
-- script: git clone https://github.com/nemrood/myscripts.git
+steps:
+- bash: |
+   ssh upilot@13.81.24.193 -p Monoprix;13.
+   sudo apt update
+   sudo apt install openjdk-default
+   wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+   sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+   sudo apt update
+   sudo apt install jenkins
+   systemctl status jenkins
+   sudo apt install docker
+   systemctl status jenkins
+   
+  displayName: 'ALL IN ONE'
 
 - task: CopyFiles@2
   inputs:
